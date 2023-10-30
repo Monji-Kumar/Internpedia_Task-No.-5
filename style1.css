@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;&displau=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+    background-image: url("bg-image.jpg");
+}
+.container{
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.container .calci{
+    position: relative;
+    display: grid;
+}
+.container .calci .value{
+    grid-column: span 4;
+    height: 140px;
+    width: 300px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    background: transparent;
+    color: aliceblue;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    
+}
+.container .calci span{
+    display: grid;
+    place-items: center;
+    height: 75px;
+    width: 75px;
+    color: aliceblue;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    transition: 0.5s;
+}
+.container .calci span:hover{
+    background: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+.container .calci .clr{
+    grid-column: span 2;
+    width: 150px;
+}
+.container .calci .plus{
+    grid-row: span 2;
+    height: 150px;
+}
